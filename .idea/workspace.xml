@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65cb5158-2737-4b41-bc25-341e3e0a89ab" name="Default Changelist" comment="" />
+    <list default="true" id="65cb5158-2737-4b41-bc25-341e3e0a89ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/abstract1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/Codewar/Intrepreter2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/Codewar/compiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/Codewar/compiler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/Codewar/funccompiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/Codewar/funccompiler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/Codewar/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/Codewar/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/Codewar/tuple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/Codewar/tuple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Codewar/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Codewar/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Codewar/Intrepreter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Codewar/Interpreterb.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +29,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -28,6 +43,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -35,8 +51,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager" selected="Application.main">
-    <configuration name="Interpreter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Codewar.Interpreter" />
+    <configuration name="Interpreterb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Codewar.Interpreterb" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
@@ -61,8 +77,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="comparetest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test.comparetest1" />
+    <configuration name="absmain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.absmain" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
@@ -116,10 +132,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.main" />
-        <item itemvalue="Application.Interpreter" />
+        <item itemvalue="Application.absmain" />
+        <item itemvalue="Application.Interpreterb" />
         <item itemvalue="Application.Maze4" />
         <item itemvalue="Application.maze3" />
-        <item itemvalue="Application.comparetest1" />
       </list>
     </recent_temporary>
   </component>
@@ -153,39 +169,68 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="524" y="289" width="308" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1366.741@0.27.1366.741" timestamp="1581323565045" />
-    <state x="578" y="210" width="424" height="520" key="FileChooserDialogImpl" timestamp="1580522534875">
+    <state x="632" y="349" width="335" height="209" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1583833303522">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="632" y="349" width="335" height="209" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1600.900@0.0.1600.900" timestamp="1583833303522" />
+    <state x="578" y="210" width="374" height="442" key="FileChooserDialogImpl" timestamp="1582715160888">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="578" y="210" width="424" height="520" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1580522534875" />
-    <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1581323750283">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="493" y="182" width="374" height="442" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1582699678029" />
+    <state x="578" y="210" width="424" height="520" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1582715160888" />
+    <state width="1554" height="128" key="GridCell.Tab.0.bottom" timestamp="1583856362465">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1581323750283" />
+    <state width="1554" height="128" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1583856362465" />
+    <state width="1320" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582098732974" />
     <state width="1554" height="216" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1580057703259" />
-    <state width="1320" height="172" key="GridCell.Tab.0.center" timestamp="1581323750283">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1554" height="128" key="GridCell.Tab.0.center" timestamp="1583856362464">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1581323750283" />
+    <state width="1554" height="128" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1583856362464" />
+    <state width="1320" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1582098732973" />
     <state width="1554" height="216" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1580057703258" />
-    <state width="1320" height="172" key="GridCell.Tab.0.left" timestamp="1581323750283">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1554" height="128" key="GridCell.Tab.0.left" timestamp="1583856362464">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1581323750283" />
+    <state width="1554" height="128" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1583856362464" />
+    <state width="1320" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1582098732973" />
     <state width="1554" height="216" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1580057703257" />
-    <state width="1320" height="172" key="GridCell.Tab.0.right" timestamp="1581323750283">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1554" height="128" key="GridCell.Tab.0.right" timestamp="1583856362465">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1581323750283" />
+    <state width="1554" height="128" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1583856362465" />
+    <state width="1320" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1582098732974" />
     <state width="1554" height="216" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1580057703258" />
-    <state x="389" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1581323519535">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1554" height="128" key="GridCell.Tab.1.bottom" timestamp="1583856362467">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="389" y="251" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1581323519535" />
-    <state x="456" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1580523208924" />
+    <state width="1554" height="128" key="GridCell.Tab.1.bottom/0.0.1600.900@0.0.1600.900" timestamp="1583856362467" />
+    <state width="1554" height="128" key="GridCell.Tab.1.center" timestamp="1583856362466">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="128" key="GridCell.Tab.1.center/0.0.1600.900@0.0.1600.900" timestamp="1583856362466" />
+    <state width="1554" height="128" key="GridCell.Tab.1.left" timestamp="1583856362466">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="128" key="GridCell.Tab.1.left/0.0.1600.900@0.0.1600.900" timestamp="1583856362466" />
+    <state width="1554" height="128" key="GridCell.Tab.1.right" timestamp="1583856362466">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="128" key="GridCell.Tab.1.right/0.0.1600.900@0.0.1600.900" timestamp="1583856362466" />
+    <state x="456" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1582882662694">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="389" y="251" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1582704682961" />
+    <state x="456" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1582882662694" />
     <state x="109" y="65" width="1372" height="803" key="new project wizard" timestamp="1580025299606">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="109" y="65" width="1372" height="803" key="new project wizard/0.27.1600.873@0.27.1600.873" timestamp="1580025299606" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1582097450098">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1582097450098" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -279,6 +324,419 @@
           <url>file://$PROJECT_DIR$/src/Codewar/maze4.java</url>
           <line>24</line>
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>155</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>171</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>170</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>177</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>176</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>180</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>184</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>183</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>186</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>187</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>188</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>189</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>191</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>194</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>195</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>196</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>197</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>199</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>198</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>202</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>203</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>204</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>205</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>206</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>208</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>209</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>215</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>216</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>218</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>223</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>224</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>225</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>227</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>229</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>228</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>231</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>232</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>233</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>234</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>236</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>237</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>238</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>239</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>240</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>241</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>242</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>243</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>244</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>245</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>246</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>247</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>248</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>251</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>252</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>254</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>253</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>255</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>256</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>258</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>259</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>260</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>261</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>266</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Codewar/Interpreterb.java</url>
+          <line>222</line>
+          <properties class="Codewar.compiler" method="compile">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="92" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

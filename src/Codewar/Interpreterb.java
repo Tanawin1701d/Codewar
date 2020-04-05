@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Intrepreter2 {
+public class Interpreterb {
 
     static Map<String, funccompiler> storage = new HashMap<>();
     static Map<String, String>   globals_var = new HashMap<>();
@@ -46,7 +46,7 @@ public class Intrepreter2 {
         storage.put(name, fn);
     }
 
-    private static Double manager(Deque<String> tokens){
+    private static Double manager(Deque<String> tokens) throws Exception {
         if (tokens.peek().equals("fn")){
             savefunc( que_to_stack(tokens) );
             return null;
@@ -56,7 +56,7 @@ public class Intrepreter2 {
 
     }
 
-    public Double input(String input) {
+    public Double input(String input) throws Exception {
         Deque<String> tokens = tokenize(input);
         return manager(tokens) ;
     }
@@ -77,18 +77,18 @@ class compiler{
 
     Stack<String>                     exp ;
     Map<String, String>               var = new HashMap<>();
-    private Map<String, funccompiler> storage  = Intrepreter2.storage;
-    private List<String>              operator = Intrepreter2.global_operator;
+    private Map<String, funccompiler> storage  = Interpreterb.storage;
+    private List<String>              operator = Interpreterb.global_operator;
 
     compiler(){}
 
     compiler(Stack<String> exp){
-        var = Intrepreter2.globals_var;
+        var = Interpreterb.globals_var;
         posfix(exp);
     }
 
     public boolean seperate(String a, String b ){
-        if ((var.containsKey(a)||a.equals(")") || a.equals("|") || Intrepreter2.isnumberic(a)) && (!b.equals(")") && !b.equals("|") &&  !operator.contains(b)))
+        if ((var.containsKey(a)||a.equals(")") || a.equals("|") || Interpreterb.isnumberic(a)) && (!b.equals(")") && !b.equals("|") &&  !operator.contains(b)))
             return true;
         else if (storage.containsKey(a)){
             if (storage.get(a).getRq_var() == 0 && (!b.equals(")") && !b.equals("|") &&  !operator.contains(b)))
@@ -173,7 +173,7 @@ class compiler{
                         iterate = two.pop();
                     }
                 }
-            }else if (var.containsKey(ob) || Intrepreter2.isnumberic(ob)){
+            }else if (var.containsKey(ob) || Interpreterb.isnumberic(ob)){
                 one.add(ob);
             }else if (storage.containsKey(ob)) {
                 int req = storage.get(ob).getRq_var();
@@ -216,11 +216,11 @@ class compiler{
         while (!two.isEmpty()){
             one.add(two.pop());
         }
-        this.exp = Intrepreter2.que_to_stack(one);
+        this.exp = Interpreterb.que_to_stack(one);
 
     }
 
-    public double compile(){
+    public double compile() throws Exception{
         Stack<String> buffer = new Stack<>();
         Stack<String> exp = (Stack<String>) this.exp.clone();
         while(!exp.isEmpty()){
@@ -261,11 +261,14 @@ class compiler{
                 buffer.add(String.valueOf(fucclone.compile()));
             }else buffer.add(pick);
         }
+        if (buffer.size() > 1 ){
+            throw new NoSuchFieldException("1111");
+        }
         return Double.parseDouble(find_val(buffer.pop())) ;
     }
 
     public String find_val(String x){
-         while (!Intrepreter2.isnumberic(x)){
+         while (!Interpreterb.isnumberic(x)){
              x = var.get(x);
          }
          return x;
@@ -360,11 +363,12 @@ class tuple {
 }
 
 class main{
-    public static void main(String[] args) {
-        Intrepreter2 test = new Intrepreter2();
+    public static void main(String[] args) throws Exception {
+        Interpreterb test = new Interpreterb();
         System.out.println(test.input("fn avg a b => ( a + b ) / 2 "));
-        System.out.println(test.input("fn add a => a +1 "));
-        System.out.println(test.input("add add add (6) + avg 6 6 "));
+        System.out.println(test.input("y"));
+        System.out.println(test.input("avg 7 4 2"));
+
     }
 }
 
