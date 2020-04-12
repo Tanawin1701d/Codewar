@@ -86,162 +86,13 @@ public class Loopover {
 
         }
         System.out.println("------------------ This is init -----------------------");
-        c_at = 0 ; r_at = row -1;
-        find(mixedUpBoard, solvedBoard);
-        while (c_cu != 0){
-            c_cu--;
-            MoveLeft(row-1);
-        }
+        MoveLastFront(solvedBoard);
         System.out.println("------------------ This is init  -----------------------");
-        MoveLeft(row-1);
-        MoveLeft(row-1);
-        /////////////////////// search 'seccond'
-        System.out.println("Fecting");
-        MoveUp(col-1);
-        int c_now = 1;
-
-
-        while (c_now < col){
-
-
-            // findwe
-            c_at = c_now;
-            try {
-                find(mixedUpBoard, solvedBoard);
-            }catch (NullPointerException e){
-                return null;
-            }
-
-
-            // go and push down
-            int time = 0;
-
-            while(c_cu != col-1) {
-                MoveRight(row - 1);
-                time++;
-                c_cu++;
-            }
-
-            MoveDown(col-1);
-
-            // goto their pos
-            c_at = 0;
-            find(mixedUpBoard, solvedBoard);
-
-            while(c_cu != col-1) {
-                MoveRight(row - 1);
-                time++;
-                c_cu++;
-            }
-            for (int i = 0; i < c_now ; i++) {
-                MoveLeft(row-1);
-            }
-
-
-            // pushup
-            MoveUp(col-1);
-            c_now++;
+        if (FixLast(solvedBoard)){
+            return reccord;
         }
-
-
-
-
-//        while(c_now != row -1  ){
-//
-//            System.out.println("startttttttttttttttttttttttttttttttttttttttt");
-//            // find
-//            System.out.println("we will use    -----------------------------------"+solvedBoard[row-1][(col+c_now+1)%col]);
-//            c_at = (col+c_now +1)%col;
-//            find(mixedUpBoard1, solvedBoard);
-//            while(c_cu != col-1){
-//                MoveRight(row-1);
-//                c_cu++;
-//            }
-//
-//            // up
-//
-//            MoveUp(col-1);
-//
-//            // find friend
-//            c_at = (0)%col;
-//            find(mixedUpBoard, solvedBoard);
-//            c_now++;
-//
-//            while(c_cu != col-1){
-//                MoveRight(row-1);
-//                c_cu++;
-//            }
-//
-//            MoveLeft(row-1);
-//
-//            /*
-//            if (mixedUpBoard1[row-1][col-1] == solvedBoard[0][col-1]){
-//                MoveLeft(row -1);
-//            }
-//             */
-//            MoveDown(col-1);
-//
-//            if (mixedUpBoard1[0][col-1] != solvedBoard[0][col-1]) {
-//                MoveLeft(row - 1);
-//                if (mixedUpBoard1[row - 1][col - 1] == solvedBoard[0][col - 1]) {
-//                    MoveLeft(row - 1);
-//                }
-//                MoveUp(col - 1);
-//
-//
-//                for (int i = 0; i < col; i++) {
-//                    if (mixedUpBoard1[row - 1][i] == solvedBoard[0][col - 1]) {
-//                        c_cu = i;
-//                        break;
-//                    }
-//                }
-//
-//                while (c_cu != col - 1) {
-//                    MoveRight(row - 1);
-//                    c_cu++;
-//                }
-//
-//                MoveDown(col - 1);
-//            }
-//        }
-//
-////        for (int i = 0; i < col ; i++) {
-////            if (Arrays.toString(mixedUpBoard1[row - 1]).equals(Arrays.toString(solvedBoard[row - 1]))){
-////                System.out.println(Arrays.deepToString(mixedUpBoard1));
-////                return reccord;
-////            }
-////            MoveLeft(row-1);
-////        }
-////
-////        MoveUp(col-1);
-////        MoveLeft(row-1);
-////        MoveLeft(row-1);
-////        boolean up = true;
-////
-////        for (int i = 0; i < col -1 ; i++) {
-////            if (up){
-////                MoveDown(col-1);
-////                up = false;
-////            }else{
-////                MoveUp(col-1);
-////                up = true;
-////            }
-////            MoveLeft(row-1);
-////        }
-////
-////        for (int i = 0; i < col ; i++) {
-////            if (Arrays.deepEquals(mixedUpBoard1, solvedBoard)){
-////                System.out.println(Arrays.deepToString(mixedUpBoard1));
-////                return reccord;
-////            }
-////            MoveLeft(row-1);
-////        }
-
-        System.out.println("------------------finish   new algoritm");
-
-
+        System.out.println("----------------------------------------------extent");
         return null;
-
     }
 
     private static void find(char[][] mix, char[][] solve){
@@ -318,6 +169,183 @@ public class Loopover {
         System.out.println(Arrays.deepToString(mixedUpBoard1));
     }
 
+    public static void MoveLastFront(char[][] solveboard){
+        while(mixedUpBoard1[row-1][0] != solveboard[row-1][0]){
+            MoveLeft(row-1);
+        }
+    }
+
+    public static void MoveFindatlast(char a){
+        int i;
+        for ( i = 0; i < col-1 ; i++) {
+            if ( mixedUpBoard1[row-1][i] == a ){
+                break;
+            }
+        }
+        for (int j = 0; j < col-1-i ; j++) {
+            MoveRight(row-1);
+        }
+    }
+
+    public static void MoveFindatlast1(char a){
+
+        System.out.println("find" + "   "+ a);
+
+        int i;
+        for( i = 0 ; i < row ; i++ ){
+            System.out.println(mixedUpBoard1[i][col-1]);
+            if (mixedUpBoard1[i][col-1] == a){
+
+                break;
+            }
+        }
+        System.out.println(i);
+        for( int j = 0 ; j < row-1-i ; j++ ){
+            System.out.println(i);
+            MoveDown(col-1);
+        }
+        System.out.println("fin");
+    }
+
+    public static boolean FixLast(char[][] solvedBoard){
+        System.out.println("-------------------Initial last row fixer---------------------------------");
+        MoveUp(col-1);
+        boolean status_up = false;
+
+        for (int i = 1; i < col; i++){
+            if ( status_up ){
+                char buffer = mixedUpBoard1[0][col-1];
+                if (solvedBoard[row-1][i] == buffer){
+                    MoveFindatlast(solvedBoard[row-1][i-1]);
+                    MoveLeft(row-1);
+                    MoveUp(col-1);
+                }else{
+                    MoveFindatlast(solvedBoard[row-1][i]);
+                    MoveUp(col-1);
+                    i--;
+                }
+                status_up = false;
+
+            }else{
+                char buffer = mixedUpBoard1[row-2][col-1];
+                if (solvedBoard[row-1][i] == buffer){
+                    MoveFindatlast(solvedBoard[row-1][i-1]);
+                    MoveLeft(row-1);
+                    MoveDown(col-1);
+                }else{
+                    MoveFindatlast(solvedBoard[row-1][i]);
+                    MoveDown(col-1);
+                    i--;
+                }
+                status_up = true;
+            }
+
+
+        }
+
+        for (int i = 0; i < col ; i++) {
+            if (mixedUpBoard1[row-1][i] != solvedBoard[row-1][i]){
+                return false;
+            }
+        }
+
+        if (!status_up){
+            if (col % 2 == 0 ){
+                return FixEvenLastRow(solvedBoard);
+            }
+            return FixEvenLastCol(solvedBoard);
+
+        }
+        return true;
+    }
+
+    public static boolean FixEvenLastCol(char[][] solvedBoard){
+        System.out.println("--------------------------------Initial last col fixer--------------------------------");
+        MoveDown(col-1);MoveDown(col-1);
+        MoveLeft(row-1);
+
+        boolean statusLeft = true;
+        for (int i = 1; i < row ; i++) {
+            System.out.println("=========" + i);
+            if (statusLeft){
+                System.out.println("inLeft");
+                char buffer1 = mixedUpBoard1[row-1][col-2];
+                if (buffer1 == solvedBoard[i][col-1]){
+                    MoveFindatlast1(solvedBoard[i-1][col-1]);
+                    MoveUp(col-1);
+                    MoveRight(row-1);
+                }else{
+                    MoveFindatlast(solvedBoard[i][col-1]);
+                    MoveRight(row-1);
+                    i--;
+                }
+                statusLeft = false;
+            }else{
+                System.out.println("inRight");
+                char buffer1 = mixedUpBoard1[row-1][0];
+                if (buffer1 == solvedBoard[i][col-1]){
+                    MoveFindatlast1(solvedBoard[i-1][col-1]);
+                    MoveUp(col-1);
+                    MoveLeft(row-1);
+                }else{
+                    MoveFindatlast1(solvedBoard[i][col-1]);
+                    MoveLeft(row-1);
+                    i--;
+                }
+                statusLeft = true;
+            }
+        }
+        System.out.println("--------------------------------Initial last col shufler--------------------------------");
+
+        if (statusLeft && row%2 == 0){
+            MoveLeft(row-1);
+            statusLeft = true;
+
+            for (int i = 0; i < row ; i++) {
+                MoveDown(col-1);
+                if (statusLeft){
+                    MoveRight(row-1);
+                }else {
+                    MoveLeft(row-1);
+                }
+                statusLeft = !(statusLeft);
+            }
+        }
+
+        return Arrays.deepToString(mixedUpBoard1).equals(Arrays.deepToString(solvedBoard));
+    }
+
+    public static boolean FixEvenLastRow(char[][] solvedBoard){
+        System.out.println("*******************************Initial row shufler*************************************");
+        MoveDown(col-1);
+        boolean status_up = true;
+        for (int i = 0; i < col ; i++) {
+            MoveLeft(row-1);
+            if (status_up){
+                MoveUp(col-1);
+                status_up = false;
+            }else{
+                MoveDown(col-1);
+                status_up = true;
+            }
+            System.out.println("statusup = " + status_up);
+        }
+        MoveLeft(row-1);
+
+        return Arrays.deepToString(mixedUpBoard1).equals(Arrays.deepToString(solvedBoard));
+    }
+
+    public static char[][] buildarr(String a, int row, int col){
+        char[][] test = new char[row][col];
+        for (int i = 0; i < a.length() ; i++) {
+            test[i/col][i%col] = a.charAt(i);
+        }
+        System.out.println(Arrays.deepToString(test));
+
+
+        return test;
+    }
+
     public static void main(String[] args) {
         List<String> ss = Loopover.solve(new char[][]{{'W', 'C', 'M', 'D', 'J', '0'},
                                                       {'O', 'R', 'F', 'B', 'A', '1'},
@@ -333,6 +361,43 @@ public class Loopover {
                             {'4', '5', '6', '7', '8', '9'}}
                 );
         System.out.println(ss);
+
+        System.out.println("-----------------------------------------------------------------------");
+
+        List<String> ss1 = Loopover.solve( buildarr("IBJDc" +
+                "TGd5S" +
+                "ZV37K" +
+                "1RF26" +
+                "H8UXP" +
+                "ONQYE" +
+                "M0bC4" +
+                "WAa9L",8,5), buildarr("ABCDE" +
+                "FGHIJ" +
+                "KLMNO" +
+                "PQRST" +
+                "UVWXY" +
+                "Z0123" +
+                "45678" +
+                "9abcd",8,5) );
+        System.out.println(ss1);
+            //IBJDc
+        //TGd5S
+        //ZV37K
+        //1RF26
+        //H8UXP
+        //ONQYE
+        //M0bC4
+        //WAa9L
+        //
+        //to turn into:
+        //ABCDE
+        //FGHIJ
+        //KLMNO
+        //PQRST
+        //UVWXY
+        //Z0123
+        //45678
+        //9abcd
     }
 
 }
